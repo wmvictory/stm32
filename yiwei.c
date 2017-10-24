@@ -2,11 +2,10 @@
 #include <stdlib.h>
 int main()
 {
-	char k[9];
+	char k[25];
 	int i;
-	i=0x0F;
+	i=~(0x0f<<(4*2));
 	itoa(i,k,2);
-	printf("%08s",k);
+	printf("%08sB\n",k);
 	return 0;
 }
-
